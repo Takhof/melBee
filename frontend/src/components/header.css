@@ -1,0 +1,36 @@
+.header {
+  background: #f5f5f5;
+}
+
+#root .App .fixed .header .flex {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#root .App .fixed .header .flex.navArea {
+  width: auto;
+}
+
+#root .App .fixed .header .flex a.px-5{
+  padding: 0;
+}
+
+#root .App .fixed .flex .logo{
+  width: 100px;
+}
+
+.toggleButon {
+  top: -8px;
+  right: 21%;
+  width: 25px;
+}
+
+.nav{
+  height: 45px;
+}
+
+.portalContent {
+  background-image: url("../assets/bgImage.png");
+  background-position: right 60px;
+  background-repeat: no-repeat;
+}

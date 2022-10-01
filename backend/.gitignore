@@ -1,1 +1,8 @@
+__pycache__
 app/__pycache__/
+app/.pytest_cache
+/env
+app/database/__pycache__/
+app/database/.env.local
+app/env
+env.local

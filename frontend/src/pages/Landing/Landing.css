@@ -1,0 +1,140 @@
+/* top */
+.top .header {
+  background: none;
+  z-index: 9999;
+}
+.top .header .flex {
+  margin: 0 15px;
+}
+.mainTtl {
+  font-size: 6.5rem;
+  line-height: 1.15;
+  margin-bottom: 30px;
+}
+
+.contentCenter {
+  margin-top: 30px;
+  width: 1000px;
+  border-right: 1px solid #959494;
+}
+
+.mv {
+  height: calc(100% - 166px);
+  margin: 0 auto;
+}
+
+.inputArea {
+  padding: 14px 20px;
+}
+
+.border-gray {
+  border: 1px solid #707070;
+}
+
+.border-gray:focus {
+  background-color: #ffffff;
+}
+
+.color-blue {
+  background-color: #3FA7C9;
+}
+
+.color-yellow {
+  background-color: #F8C128;
+}
+
+.App.top {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.main_top {
+  padding: 0 0 55px 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
+}
+
+.main_top::before {
+  content: "Make";
+  position: absolute;
+  background: linear-gradient(90deg, #f4f3f0 0%, #f1e4bc);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 10rem;
+  font-family: 'Poppins';
+  font-weight: bold;
+  left: 3%;
+  top: -18%;
+}
+
+.mainMiddle_top::before {
+  content: "Your Idea";
+  position: absolute;
+  background: linear-gradient(90deg, #f4f3f0 0%, #f1e4bc);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 10rem;
+  font-family: 'Poppins';
+  font-weight: bold;
+  left: 3%;
+  bottom: 34%;
+}
+
+.main_top::after {
+  content: "Simple";
+  position: absolute;
+  text-transform: capitalize;
+  background: linear-gradient(90deg, #f4f3f0 0%, #f1e4bc);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 10.5rem;
+  font-family: 'Poppins';
+  font-weight: bold;
+  left: 3%;
+  bottom: -1%;
+}
+
+.ttl_top {
+  display: flex;
+  align-items: center;
+}
+
+.ttl_top::before,
+.ttl_top::after {
+  content: "";
+  border-top: 1px solid rgba(31, 41, 55, 1.0);
+  flex-grow: 1;
+}
+
+.ttl_top::before {
+  margin-right: 2rem;
+}
+
+.ttl_top::after {
+  margin-left: 2rem;
+}
+
+.verticalText {
+  writing-mode: vertical-lr;
+}
+
+@media (min-width: 1536px) {
+  .main_top::before,
+  .mainMiddle_top::before,
+  .main_top::after {
+    left: 13%;
+  }
+}
+
+@media (max-width: 960px) {
+  .main_top::before,
+  .mainMiddle_top::before,
+  .main_top::after {
+    font-size: 9rem;
+    left: 0;
+    z-index: -1;
+  }
+}
